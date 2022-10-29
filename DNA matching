@@ -1,0 +1,22 @@
+function DNAStrand(dna){
+let s = [];
+  dna.split("").forEach((ele)=>{
+    if(ele==="T")
+      {
+        s.push("A");
+      }
+    else if(ele==="A")
+      {
+        s.push("T");
+      }
+    else if(ele === "C")
+      {
+        s.push("G");
+      }
+    else{
+      s.push("C");
+    }
+    
+  })
+  return s.join('');
+}
